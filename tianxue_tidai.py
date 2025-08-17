@@ -70,7 +70,7 @@ sys_prompt = """
     扫描的卷子的文字输出均以 坐标,文本,置信度 的方式给出，请在以所给坐标拼出整篇文章后再进行批改
 """
 
-api_key = "sk-a64510de1c75425fb21ed41b3f305f96"
+api_key = <your api key>
 
 # 初始化PaddleOCR
 ocr_en = PaddleOCR(
@@ -142,3 +142,4 @@ with gr.Blocks() as demo :
     btn.click(fn=pic_input,inputs=[input1,input2],outputs=output)
 
 demo.launch(share=True)
+
